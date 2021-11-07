@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>+kotinder</title>
+
+    <!--Recursos gráficos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+  <body class="pantalla_principal">
+    <!-- Barra de navegación -->
+    <nav id="IDnavbar" class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="principal.html"> <img src="imagenes/logo_horizontal.png" alt="+kotinder"></a>
+        <!--BOTON +KOTINDER -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                <!--BOTON PERFIL -->
+                    <a class="nav-link" href="perfil.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Perfil</a>
+                </li>
+                <li class="nav-item">
+                <!--BOTON Favoritos -->
+                    <a class="nav-link" href="favoritos.html"><i class="fa fa-star" aria-hidden="true"></i> Favoritos</a>
+                </li>
+                <li class="nav-item">
+                    <!--BOTON Mensajes -->
+                        <a class="nav-link" href="adopciones.html"> <i class="fa fa-paw" aria-hidden="true"></i> Adopciones</a>
+                    </li>
+                    <!--BOTON Configuración -->
+                    <a class="nav-link" href="Configuración.html"> <i class="fa fa-cog" aria-hidden="true"></i> Configuración</a>
+                </li>
+            </li>
+            <!--BOTON Configuración -->
+            <a class="nav-link" id="boton_logout" href="inicio.html"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Cerrar sesión</a>
+        </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div id="banner" style="text-align: center; color: gray; font-weight: bold; font-size: large; ">
+    </div>
+    <!-- Carta -->
+    <div class="card" id ="carta_mascota"  style="left: 38%; margin: 3%;">
+    </div>
+    <!-- Botones dislike, superlike, like -->
+    <div id ="Botones_principal">
+    <div class="botones_likes">
+        <button id="btn_dislike"type="button" class="btn btn-danger btn-circle btn-xl btn_dislike" title="Siguiente" onclick="siguienteMasc()"><i class="fa fa-times"></i>
+        </button>
+        <button id="btn_superlike" type="button" class="btn btn-info btn-circle btn-xl btn_superlike" title="Añadir a favoritos" onclick="postFavs()"><i class="fa fa-star"></i>
+        </button>
+        <button id="btn_like" type="button" class="btn btn-success btn-circle btn-xl btn_like" title="Solicitar Adopción" onclick="SolicitarAdopcion()"><i class="fa fa-heart"></i>
+        </button>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <script src="principal.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+</body>
+</html>
